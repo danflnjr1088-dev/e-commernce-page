@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page.css">    
+      <title>Mini E-Commernce Store</title>
+  </head>
+  <body>
+    <main class="product-container">
+      <header>
+        <div class="top-row">
+         <div class="logo">cityG.</div>
+         <img src="file_00000000664c81f4bc867926b2d970ea.png" class="avatar" alt="user-profile">
+        </div>
+        <nav class="nav-container">
+          <form class="search">
+            <input type="checkbox" id="search-checkbox" class="search-toggle">
+            <label for="search-checkbox" class="search-btn" aria-label="Search">
+    <svg 
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true">
+        
+        <circle   cx="11" cy="11" r="7"></circle>
+        <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
+    </svg>
+            </label>
+            <input type="search" class="search-input" placeholder="Search...">
+            </form>
+            <div class="nav-icons">
+            <label type="button" class="cart-link" aria-label="Shopping cart">
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="22"
+        height="22"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true">
+
+        <circle cx="9" cy="20" r="1"></circle>
+        <circle cx="19" cy="20" r="1"></circle>
+        <path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 2-1.6L22 8H6"></path>
+    </svg>
+            </label>
+            <label type="button" class="wishlist-btn" aria-label="Wishlist">
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="22"
+        height="22"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true">
+
+        <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.9-8.6a5.5 5.5 0 0 0-.1-7.8z"></path>
+    </svg>
+            </label>
+            </div>
+        </nav>
+      </header>
+      <a href="product.html" class="view-all">View All Products</a>
+      <section class="hero">
+        <div class="left-section">
+        <span class="tag">Have a Look</span>
+        <h1>Premium Sequaio Inspiring<br>Musico</h1>
+        <p>
+          Sleek minimalist design with smooth Ivory finish and elegant gold accent.<br>Soft memory foam ear cushions, adjustable padded headband,<br>crystal-clear sound and a deep bass.<br>Lightweight for all day working comfort, perfect for listening music and calls.
+        </p>
+        </div>
+        <div class="product-box">
+        <img class="product-image" src="1789479758921.png" alt="product">
+        <p class="price-tag">$49.99</p>
+        <div class="hero-btns">
+          
+          <div class="quantity-box">
+            <button class="quantity-btn" data-action="decrease">-</button>
+            <span class="quantity-num">1</span>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+          <button class="add-to-cart-btn" data-item="Premium Sequaio Inspiring Musico" data-price="49.99">
+            Add to Cart
+          </button>
+        </div>
+        </div>
+      </section>
+      <aside class="colors">
+                <article class="promo-card card">
+          <div class="left-box">
+          <h4>BlueMix Earbuds</h4>
+          <p>
+            Beautiful blue design, premium sound,<br>all-day battery.Your everyday perfect audio companion.
+          </p>
+          </div>
+          <div class="product-box">
+          <img src="1789646645560.png" alt="product" class="product-image">
+            <p class="price-tag">$12.99</p>
+            <div class="hero-btns">
+            <div class="quantity-box">
+              <button class="quantity-btn" data-action="decrease">-</button>
+              <span class="quantity-num">1</span>
+              <button class="quantity-btn" data-action="increase">+</button>
+            </div>
+          <button class="add-to-cart-btn view" data-item="BlueMix Earbuds" data-price="12.99">Add to Cart</button>
+            </div>
+        </article>
+      </aside>
+      <section class="more-product">
+        <h3>More Products</h3>
+        <div class="product-box card-img card1">
+          <h4>GreenFlow Sport</h4>
+          <p>Bold green design, Lightweight and<br>Comfortable.<br>Built for speed, style and all-day wears.</p>
+          <img src="1789668648677.png" alt="product img">
+          <span>$59.99</span>
+          <div class="quantity-box">
+            <button class="quantity-btn" data-action="decrease">-</button>
+            <span class="quantity-num">1</span>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+          <button type="button" class="add-to-cart-btn greenflow" data-item="GreenFlow Sport" data-price="59.99">Add to Cart</button>
+        </div>
+        <div class="product-box card-img card2">
+          <h4>Royal Purple Timepiece</h4>
+                    <p>Elegant Purple finish,premium details<br>Timeless luxury on your wrist</p>
+          <img src="1789668740689.png" alt="product img" class="product-image">
+        <span>$89.99</span>
+          <div class="quantity-box">
+            <button class="quantity-btn" data-action="decrease">-</button>
+            <span class="quantity-num">1</span>
+            <button class="quantity-btn" data-action="increase">1</button>
+          </div>
+          <button type="button" class="add-to-cart-btn watch" data-item="Roya Purple Timepiece" data-price="89.99">Add to Cart</button>
+        </div>
+      </section>
+      <section class="third-box">
+        <div class="product-box card-img card3">
+          <h4>Scarlet Grace Polazo</h4>
+            <p>Stunning red designed polazo,modest<br>and graceful.Effortless beauty for every occasion.</p>
+          <img src="1789668676451.png" alt="product img" class="product-image">
+          <span>$29.99</span>
+           <div class="quantity-box">
+             <button class="quantity-btn" data-action="decrease">-</button>
+             <span class="quantity-num">1</span>
+             <button class="quantity-btn" data-action="increase">+</button>
+           </div>
+          <button class="add-to-cart-btn polazo" data-item="Scarlet Grace Polazo" data-price="29.99">Add to Cart</button>
+        </div>
+      </section>
+      <footer>
+      <div class="footer-brand">
+        <h2>cityG.</h2>
+        <p>City Ground Store</p>
+        <p>Your style, your ground.</p>
+    </div>
+
+    <div class="footer-links">
+        <div class="shop">
+            <h3>Shop</h3>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Accessories</a>
+        </div>
+
+        <div class="quick-link">
+            <h3>Links</h3>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+        </div>
+
+        <div class="support">
+            <h3>Support</h3>
+            <a href="#">Contact</a>
+            <a href="#">FAQ</a>
+            <a href="#">Shipping</a>
+        </div>
+    </div>
+
+    <div class="social-links">
+        <h3>Follow Us</h3>
+         <div class="social-links-icons">
+         <div class="social-icons facebook">
+           <svg viewBox="0 0 24 24" aria-label="Facebook">
+  <path fill="currentColor" d="M14 8h3V4h-3c-3.3 0-5 1.7-5 5v3H6v4h3v8h4v-8h3l1-4h-4V9c0-.7.3-1 1-1z"/>
+</svg>
+           </div>
+           <div class="social-icons instagram">
+           <svg viewBox="0 0 24 24" aria-label="Instagram">
+  <path fill="currentColor" d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9z"/>
+  <circle cx="12" cy="12" r="4.2" fill="currentColor"/>
+  <circle cx="17.5" cy="6.7" r="1.2" fill="currentColor"/>
+           </svg>
+           </div>
+           <div class="social-icons tiktok">
+           <svg viewBox="0 0 24 24" aria-label="TikTok">
+  <path fill="currentColor" d="M16.5 2h3c.2 1.8 1.2 3.4 2.5 4.3v3.1c-1.5 0-3-.5-4.2-1.3v7.1c0 4-2.8 6.8-6.8 6.8A6.8 6.8 0 0 1 4.2 15c0-3.8 3-6.7 6.8-6.7.4 0 .8 0 1.2.1v3.4a3.5 3.5 0 0 0-1.2-.2 3.4 3.4 0 1 0 3.4 3.4V2h2.1z"/>
+           </svg>
+           </div>
+           <div class="social-icons x">
+           <svg viewBox="0 0 24 24" aria-label="X">
+  <path fill="currentColor" d="M18.9 2H22l-6.8 7.8L23 22h-6.1l-4.8-6.3L6.6 22H3.5l7.2-8.2L3 2h6.2l4.3 5.7L18.9 2zm-1.1 17.3h1.7L8.3 4.6H6.5l11.3 14.7z"/>
+           </svg>
+         </div>
+         </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 City Ground Store. All Rights Reserved.</p>
+    </div>
+      </footer>
+    </main>
+    <div class="cart-container hidden">
+  <div class="logo">cityG.</div>
+  <div class="cart-item-box"></div>
+  <button class="pay-btn">Pay</button>
+  <button class="product-back-btn" id="productPageBackBtn">Continue Shopping</button>
+</div>
+
+<section class="check-out-section hidden">
+  <div class="check-out-page-logo">
+    <span>cityG.</span>
+  </div>
+
+  <div class="check-out-page">
+    <h2>Checkout</h2>
+
+    <div class="top-container">
+      <h3>Personal Details</h3>
+      <label class="input-field" for="emailInput">Email</label>
+      <input type="email" id="emailInput" name="email" placeholder="Enter your email" required>
+    <label for="nameInput" class="input-field">Full Name</label>
+      <input type="text" id="nameInput" placeholder="Enter your Full Name" required>
+    </div>
+
+    <div class="bottom-container">
+      <h3>Shipping Address</h3>
+      <label class="input-field" for="countryInput">Country</label>
+      <input type="text" id="countryInput" placeholder="Enter your Country" required>
+
+      <label class="input-field" for="stateInput">State</label>
+      <input type="text" id="stateInput" placeholder="Enter your state" required>
+
+      <label class="input-field" for="cityInput">City</label>
+      <input type="text" id="cityInput" placeholder="Enter your city" required>
+
+      <label class="input-field" for="postalInput">Postal/ZIP</label>
+      <input type="text" id="postalInput" placeholder="Postal/ZIP">
+
+      <button class="next-btn">Continue to Payment &rarr;</button>
+    </div>
+  </div>
+
+  <button class="back-btn" id="backButton">&larr; Back</button>
+</section>
+
+<section class="payment-section hidden">
+  <div class="logo">cityG.</div>
+  <h3>Payment Method</h3>
+
+  <div class="input-container">
+    <div class="card-infomation">
+      <label for="card" class="input-box">
+        <input type="radio" name="payment" value="card" checked>
+        Card
+      </label>
+
+      <label for="cardNumber" class="input-box">Card Number :</label>
+      <input type="number" id="cardNumber" placeholder="0000 0000 0000 0000">
+
+      <label for="cardName" class="input-box">Name on Card</label>
+      <input type="text" id="cardName" placeholder="Enter name on card">
+
+      <div class="card-box">
+        <label for="expire" class="input-box expire">Expire Date :</label>
+        <input type="text" id="expire" placeholder="MM/YY">
+
+        <label for="cvv" class="input-box">CVV</label>
+        <input type="text" id="cvv" placeholder="CVV">
+      </div>
+    </div>
+
+    <div class="second-option">
+      <label for="paypal" class="input-box">
+        <input type="radio" name="payment" value="paypal">
+        Paypal
+      </label>
+
+      <label for="applepay" class="input-box">
+        <input type="radio" name="payment" value="applepay">
+        Apple Pay
+      </label>
+    </div>
+
+    <button class="submit-btn">Pay</button>
+  </div>
+
+  <button class="back-btn" id="paymentBackButton">&larr; Back</button>
+</section>
+
+      <script src="product.js"></script>
+  </body>
+</html>

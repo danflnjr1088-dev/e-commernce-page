@@ -1,0 +1,133 @@
+.welcome-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  background: linear-gradient(
+    135deg,
+    #141e30,
+    #243b55,
+    #101827
+  );
+
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+.welcome-content {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+
+  animation: welcomeFadeIn 1s ease forwards;
+}
+.welcome-logo {
+  margin: 0 0 8px;
+  font-size: clamp(3rem, 12vw, 5rem);
+  font-weight: 800;
+  letter-spacing: -3px;
+}
+.welcome-logo span {
+  color: #64d8ff;
+}
+.welcome-tagline {
+  margin-bottom: 55px;
+  color: #b8c8dc;
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+}
+.welcome-title {
+  margin-bottom: 18px;
+  font-size: clamp(2rem, 7vw, 3rem);
+  line-height: 1.3;
+}
+
+.welcome-title span {
+  display: block;
+  color: #64d8ff;
+}
+.welcome-description {
+  max-width: 380px;
+  margin: 0 auto 35px;
+  color: #c8d2df;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+.start-shopping-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-decoration: none;
+  outline: none;
+  padding: 15px 28px;
+  border: none;
+  border-radius: 35px;
+
+  background: #ffffff;
+  color: #141e30;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.start-shopping-btn:hover {
+  background: #64d8ff;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(100, 216, 255, 0.2);
+}
+
+.start-shopping-btn:active {
+  transform: scale(0.96);
+}
+.arrow {
+  font-size: 1.3rem;
+  transition: transform 0.25s ease;
+}
+
+.start-shopping-btn:hover .arrow {
+  transform: translateX(5px);
+}
+.welcome-footer {
+  margin-top: 65px;
+  color: #91a4bc;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+@keyframes welcomeFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-tagline {
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+  }
+
+  .welcome-description {
+    font-size: 0.9rem;
+  }
+
+  .welcome-footer {
+    margin-top: 50px;
+  }
+}

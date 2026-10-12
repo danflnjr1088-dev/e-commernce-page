@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Product Page</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <main class="product-container">
+      <header>
+        <div class="top-row">
+          <div class="logo">cityG.</div>
+        </div>
+        <div class="search-container">
+        <form class="search">
+            <input type="checkbox" id="search-checkbox" class="search-toggle">
+            <label for="search-checkbox" class="search-btn" aria-label="search">
+              <svg 
+  xmlns="http://www.w3.org/2000/svg" 
+  width="20" 
+  height="20" 
+  viewBox="0 0 24 24" 
+  fill="none" 
+  stroke="currentColor" 
+  stroke-width="2" 
+  stroke-linecap="round" 
+  stroke-linejoin="round"
+  aria-hidden="true">
+  <circle cx="11" cy="11" r="7"></circle>
+  <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
+            </svg>
+            </label>
+            <input type="search" placeholder="Search Products..." class="search-input">
+        </form>
+        </div>
+        <nav class="nav-container">
+          
+          <div class="nav-bar">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Wishlist</a></li>
+              <li><a href="#" class="cart-link">Cart</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="category-filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="men">Men</button>
+          <button class="filter-btn" data-filter="women">Women</button>
+          <button class="filter-btn" data-filter="accessories">Accessories</button>
+        </div>
+      </header>
+      <section class="product-grid">
+        <div class="product-item" data-category="men">
+          <div class="product-box">
+            <img src="1789994588120.png" alt="mens Item" class="product-image">
+              <h3>Men's T-Shirt</h3>
+              <p>$29.99</p>
+            <div class="quantity-box">
+              <button class="quantity-btn" data-action="decrease">-</button>
+              <span class="quantity-num">1</span>
+              <button class="quantity-btn" data-action="increase">+</button>
+            </div>
+            <button type="button" class="add-to-cart-btn" data-item="T-Shirt" data-price="29.99">
+        Add to Cart
+            </button>
+          </div>
+          <div class="product-box">
+            <img src="1790067309794.png" alt="mens Item" class="product-image">   
+            <h3>Hoddie</h3>
+              <p>$39.99</p>
+            <div class="quantity-box">
+              <button class="quantity-btn" data-action="decrease">-</button>
+              <span class="quantity-num">1</span>
+              <button class="quantity-btn" data-action="increase">+</button>
+      </div>
+            <button type="button" class="add-to-cart-btn" data-item="Hoddie" data-price="39.99">
+        Add to Cart
+            </button>
+          </div>
+          <div class="product-box">
+            <img src="1789994731934.png" alt="mens Item" class="product-image">
+              <h3>Nike Shoe</h3>
+              <p>$29.99</p>
+              <div class="quantity-box">
+              <button class="quantity-btn" data-action="decrease">-</button>
+              <span class="quantity-num">1</span>
+              <button class="quantity-btn" data-action="increase">+</button>
+              </div>
+              <button type="button" class="add-to-cart-btn" data-item="Nike Shoe" data-price="29.99">Add to Cart</button>
+          </div>
+          <div class="product-box">
+            <img src="1789994698951.png" alt="mens Item" class="product-image">
+              <h3>Joggers</h3>
+              <p>$19.99</p>
+              <div class="quantity-box">
+              <button class="quantity-btn" data-action="decrease">-</button>
+              <span class="quantity-num">1</span>
+              <button class="quantity-btn" data-action="increase">+</button>
+              </div>
+            <button type="button" class="add-to-cart-btn" data-item="Joggers" data-price="19.99">
+        Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="product-item" data-category="women">
+          <div class="product-box">
+            <img src="1789994619854.png" alt="womens Item" class="product-image">
+              <h3>Women Dress</h3>
+              <p>$49.99</p>
+             <div class="quantity-box">
+              <button class="quantity-btn" data-action="decrease">-</button>
+              <span class="quantity-num">1</span>
+              <button class="quantity-btn" data-action="increase">+</button>
+             </div>
+            <button type="button" class="add-to-cart-btn" data-item="Women Dress" data-price="49.99">
+        Add to Cart
+            </button>
+          </div>
+          <div class="product-box">
+            <img src="1789994183154.png" alt="womens Item" class="product-image">
+              <h3>Casual Top</h3>
+              <p>$29.99</p>
+              <div class="quantity-box">
+              <button class="quantity-btn" data-action="decrease">-</button>
+              <span class="quantity-num">1</span>
+        
+        <button class="quantity-btn" data-action="increase">+</button>
+              </div>
+            <button type="button" class="add-to-cart-btn" data-item="Casual Top" data-price="29.99">
+        Add to Cart
+            </button>
+          </div>
+          <div class="product-box">
+            <img src="1789994615793.png" alt="womens Item" class="product-image">
+              <h3>Pencil Skirt</h3>
+              <p>$39.99</p>
+            <div class="quantity-box">
+              <button class="quantity-btn" data-action="decrease">-</button>
+              <span class="quantity-num">1</span>
+              <button class="quantity-btn" data-action="increase">+</button>
+            </div>
+            <button type="button" class="add-to-cart-btn" data-item="Pencil Skirt" data-price="39.99">
+        Add to Cart
+            </button>
+          </div>
+          <div class="product-box">
+            <img src="1789994739724.png" alt="womens Item" class="product-image">
+              <h3>Blouses</h3>
+              <p>$24.99</p>
+            <div class="quantity-box">
+              <button class="quantity-btn" data-action="decrease">-</button>
+              <span class="quantity-num">1</span>
+              <button class="quantity-btn" data-action="increase">+</button>
+            </div>
+            <button type="button" class="add-to-cart-btn" data-item="Blouses" data-price="24.99">
+        Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="product-item" data-category="accessories">
+          <div class="product-box">
+            <img src="1789994448186.png" alt="mens Item" class="product-image">
+              <h3>Wrist Watch</h3>
+              <p>$59.99</p>
+            <div class="quantity-box">
+              <button class="quantity-btn" data-action="decrease">-</button>
+              <span class="quantity-num">1</span>
+              <button class="quantity-btn" data-action="increase">+</button>
+            </div>
+            <button type="button" class="add-to-cart-btn" data-item="Wrist Watch" data-price="59.99">
+        Add to Cart
+            </button>
+          </div>
+          <div class="product-box">
+            <img src="1789994686767.png" alt="accessories Item" class="product-image">
+              <h3>Bracelet</h3>
+              <p>$29.99</p>
+            <div class="quantity-box">
+              <button class="quantity-btn" data-action="decrease">-</button>
+              <span class="quantity-num">1</span>
+              <button class="quantity-btn" data-action="increase">+</button>
+            </div>
+            <button type="button" class="add-to-cart-btn" data-item="Bracelet" data-price="29.99">
+        Add to Cart
+            </button>
+          </div>
+          <div class="product-box">
+            <img src="1789994825746.png" alt="accessories Item" class="product-image">
+              <h3>Sunglasses</h3>
+              <p>$19.99</p>
+            <div class="quantity-box">
+              <button class="quantity-btn" data-action="decrease">-</button>
+              <span class="quantity-num">1</span>
+              <button class="quantity-btn" data-action="increase">+</button>
+            </div>
+            <button type="button" class="add-to-cart-btn" data-item="Sunglasses" data-price="19.99">
+        Add to Cart
+            </button>
+          </div>
+          <div class="product-box">
+            <img src="1789479274946.png" alt="accessories Item" class="product-image">
+              <h3>Headphones</h3>
+              <p>$49.99</p>
+            <div class="quantity-box">
+              <button class="quantity-btn" data-action="decrease">-</button>
+              <span class="quantity-num">1</span>
+              <button class="quantity-btn" data-action="increase">+</button>
+            </div>
+            <button type="button" class="add-to-cart-btn" data-item="Headphones" data-price="49.99">
+        Add to Cart
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="cart-container hidden">
+  <div class="logo">cityG.</div>
+  <div class="cart-item-box"></div>
+  <button class="pay-btn">Pay</button>
+  <button class="product-back-btn" id="productPageBackBtn">Continue Shopping</button>
+</div>
+
+<section class="check-out-section hidden">
+  <div class="check-out-page-logo">
+    <span>cityG.</span>
+  </div>
+
+  <div class="check-out-page">
+    <h2>Checkout</h2>
+
+    <div class="top-container">
+      <h3>Personal Details</h3>
+      <label class="input-field" for="emailInput">Email</label>
+      <input type="email" id="emailInput" name="email" placeholder="Enter your email" required>
+    <label for="nameInput" class="input-field">Full Name</label>
+      <input type="text" id="nameInput" placeholder="Enter your Full Name" required>
+    </div>
+
+    <div class="bottom-container">
+      <h3>Shipping Address</h3>
+      <label class="input-field" for="countryInput">Country</label>
+      <input type="text" id="countryInput" placeholder="Enter your Country" required>
+
+      <label class="input-field" for="stateInput">State</label>
+      <input type="text" id="stateInput" placeholder="Enter your state" required>
+
+      <label class="input-field" for="cityInput">City</label>
+      <input type="text" id="cityInput" placeholder="Enter your city" required>
+
+      <label class="input-field" for="postalInput">Postal/ZIP</label>
+      <input type="text" id="postalInput" placeholder="Postal/ZIP">
+
+      <button class="next-btn">Continue to Payment &rarr;</button>
+    </div>
+  </div>
+  <button class="back-btn" id="backButton">&larr; Back</button>
+</section>
+
+    <section class="payment-section hidden">
+  <div class="logo">cityG.</div>
+  <h3>Payment Method</h3>
+
+  <div class="input-container">
+    <div class="card-infomation">
+      <label for="card" class="input-box">
+        <input type="radio" name="payment" value="card" checked>
+        Card
+      </label>
+
+      <label for="cardNumber" class="input-box">Card Number :</label>
+      <input type="number" id="cardNumber" placeholder="0000 0000 0000 0000">
+
+      <label for="cardName" class="input-box">Name on Card</label>
+      <input type="text" id="cardName" placeholder="Enter name on card">
+
+      <div class="card-box">
+        <label for="expire" class="input-box expire">Expire Date :</label>
+        <input type="text" id="expire" placeholder="MM/YY">
+
+        <label for="cvv" class="input-box cvv">CVV :</label>
+        <input type="text" id="cvv" placeholder="CVV">
+      </div>
+    </div>
+
+    <div class="second-option">
+      <label for="paypal" class="input-box">
+        <input type="radio" name="payment" value="paypal">
+        Paypal
+      </label>
+
+      <label for="applepay" class="input-box">
+        <input type="radio" name="payment" value="applepay">
+        Apple Pay
+      </label>
+    </div>
+
+    <button class="submit-btn">Pay</button>
+  </div>
+
+  <button class="back-btn" id="paymentBackButton">&larr; Back</button>
+</section>
+
+<script src="product.js"></script>
+</body>
+</html>
